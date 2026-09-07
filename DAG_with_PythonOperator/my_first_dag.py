@@ -1,12 +1,12 @@
 # Import the libraries
 from datetime import timedelta
 # The DAG object; we'll need this to instantiate a DAG
-from airflow.models import DAG
+from airflow.models import DAG # type: ignore
 # Operators; you need this to write tasks!
-from airflow.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator # type: ignore
 
 # This makes scheduling easy
-from airflow.utils.dates import days_ago
+from airflow.utils.dates import days_ago # type: ignore
 
 # Define the path for the input and output files
 input_file = '/etc/passwd'
